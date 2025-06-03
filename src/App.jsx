@@ -7,6 +7,7 @@ import Navbar from './components/Navbar';
 import AddCourse from './pages/AddCourse';
 import CourseDetail from './pages/CourseDetails';
 import MyCourses from './pages/MyCourses';
+import AdminDashboard from "./pages/AdminDashboard";
 function App() {
   return (
     <>
@@ -21,6 +22,7 @@ function App() {
 <Route path="/my-courses" element={<MyCourses />} />
 
           <Route path="/admin/add-course" element={<AddCourse />} />
+          <Route path="/admin" element={<AdminDashboard />} />
       </Routes>
       </Router>
     </>
